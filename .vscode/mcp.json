@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "playwright": {
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest"
+            ]
+        },
+         "time": {
+            "command": "uvx",
+            "args": ["mcp-server-time"]
+      }
+    }
+}
