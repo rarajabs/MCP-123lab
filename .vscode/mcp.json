@@ -1,19 +1,31 @@
 {
-    "servers": {
-        "playwright": {
-            "command": "npx",
-            "args": [
-                "@playwright/mcp@latest"
-            ]
-        },
-         "time": {
-            "command": "uvx",
-            "args": ["mcp-server-time"]
-      },
-      "add": {
-          "command": "py",
-          "cwd": "${workspaceFolder}/src/add_mcp_server",
-          "args": ["server.py"]
-      }
-    }
+	"servers": {
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"type": "stdio"
+		},
+		"time": {
+			"command": "uvx",
+			"args": [
+				"mcp-server-time"
+			],
+			"type": "stdio"
+		},
+		"add": {
+			"command": "py",
+			"cwd": "${workspaceFolder}/src/add_mcp_server",
+			"args": [
+				"server.py"
+			],
+			"type": "stdio"
+		},
+		"cellular": {
+			"url": "http://127.0.0.1:8888/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
 }
