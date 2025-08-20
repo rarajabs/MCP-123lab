@@ -9,6 +9,11 @@
          "time": {
             "command": "uvx",
             "args": ["mcp-server-time"]
+      },
+      "add": {
+          "command": "py",
+          "cwd": "${workspaceFolder}/src/add_mcp_server",
+          "args": ["server.py"]
       }
     }
 }
